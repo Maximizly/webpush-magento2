@@ -1,5 +1,5 @@
 {
-  "name": "maximizly/webpush",
+  "name": "maximizly/webpush-magento2",
   "description": "Maximizly Webpush Magento 2 Extension",
   "require": {},
   "type": "magento2-module",
