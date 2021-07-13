@@ -30,7 +30,7 @@ class InstallData implements InstallDataInterface
 
         $pubDir =  $this->_dir->getPath('pub');
 
-        file_put_contents($pubDir.'/maximizly-sw.js', "importScripts('https://maximizly.s3.eu-central-1.amazonaws.com/sources/webpush/develop/worker/maximizly-sw.js')");
+        file_put_contents($pubDir.'/maximizly-sw.js', "importScripts('https://maximizly.s3.eu-central-1.amazonaws.com/sources/webpush/production/worker/maximizly-sw.js')");
 
         $installer->endSetup();
     }

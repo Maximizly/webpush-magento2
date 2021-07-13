@@ -1,7 +1,6 @@
 # Maximizly - Webpush Magento 2.3 Exentsion
 
-If you decided to make an open source module, you should make sure that ever body understand what you did. To make your work less harder,
-I want to provide a Skeleton Module. Checkout this module, remove the parts you do not need and fill out the gabs you think they are useful.
+To automaticly activate Webpush (Tracking and Registration) in your Magento Store, please install the following package.
 
 ## Installation
 
