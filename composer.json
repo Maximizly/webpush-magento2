@@ -1,0 +1,25 @@
+{
+  "name": "maximizly/webpush",
+  "description": "Maximizly Webpush Magento 2 Extension",
+  "require": {},
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "license": "GPL-3.0",
+  "homepage": "https://www.maximizly.app",
+  "authors": [
+    {
+      "name": "Maximizly",
+      "email": "support@maximizly.app",
+      "homepage": "https://www.maximizly.app",
+      "role": "Technical Support"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Maximizly\\Webpush\\": ""
+    }
+  }
+}
