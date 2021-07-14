@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<csp_whitelist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Csp:etc/csp_whitelist.xsd">
+    <policies>
+        <policy id="script-src">
+            <values>
+                <value id="maximizly-s3-js" type="host">https://maximizly.s3.eu-central-1.amazonaws.com</value>
+                <value id="maximizly-js" type="host">*.maximizly.app</value>
+            </values>
+        </policy>
+        <policy id="connect-src">
+            <values>
+                <value id="maximizly-s3-cct" type="host">https://maximizly.s3.eu-central-1.amazonaws.com</value>
+                <value id="maximizly-cct" type="host">*.maximizly.app</value>
+            </values>
+        </policy>
+        <policy id="style-src">
+            <values>
+                <value id="maximizly-s3-css" type="host">https://maximizly.s3.eu-central-1.amazonaws.com</value>
+                <value id="maximizly-css" type="host">*.maximizly.app</value>
+            </values>
+        </policy>
+    </policies>
+</csp_whitelist>

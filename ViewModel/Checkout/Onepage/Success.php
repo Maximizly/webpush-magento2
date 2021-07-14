@@ -4,14 +4,19 @@ namespace Maximizly\Webpush\ViewModel\Checkout\Onepage;
 
 use Magento\Checkout\Model\Session;
 use Magento\Framework\View\Element\Block\ArgumentInterface;
+use Magento\Store\Model\StoreManagerInterface;
 
 class Success implements ArgumentInterface
 {
     protected $_checkoutSession;
+    protected $_storeManager;
+
     public function __construct(
-        Session $checkoutSession
+        Session $checkoutSession,
+        StoreMangerInterface $storeManager
     ) {
         $this->_checkoutSession = $checkoutSession;
+        $this->_storeManager = $storeManager;
     }
 
     public function getOrder()
@@ -27,5 +32,10 @@ class Success implements ArgumentInterface
     public function getOrderNumber()
     {
         return $this->getOrder()->getIncrementId();
+    }
+
+    public function getCurrency()
+    {
+        return $this->_storeManager->getStore()->getCurrentCurrency()->getCode();
     }
 }

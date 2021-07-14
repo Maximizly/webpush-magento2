@@ -1,5 +1,16 @@
-<?php $viewModel = $block->getViewModel(); ?>
+<?php if($this->helper('Maximizly\Webpush\Helper\Data')->getConfig('webpush/general/enable')): ?>
 
-<script>
-    maximizly.push(['trackEcommerceOrder',"<?= $viewModel->getOrderNumber() ?>",<?= $viewModel->getOrderTotal() ?>]);
-</script>
+    <?php $viewModel = $block->getViewModel(); ?>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            maximizly.push([
+                'trackEcommerceOrder',
+                "<?= $viewModel->getOrderNumber() ?>",
+                <?= $viewModel->getOrderTotal() ?>,
+                <?= $viewModel->getCurrency() ?>
+            ]);
+        });
+    </script>
+
+<?php endif; ?>
