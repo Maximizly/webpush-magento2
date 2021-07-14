@@ -13,7 +13,7 @@ class Success implements ArgumentInterface
 
     public function __construct(
         Session $checkoutSession,
-        StoreMangerInterface $storeManager
+        StoreManagerInterface $storeManager
     ) {
         $this->_checkoutSession = $checkoutSession;
         $this->_storeManager = $storeManager;
